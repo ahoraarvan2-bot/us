@@ -1,0 +1,662 @@
+{
+  "_readme": "Every image used on the site. Local files ship with the project; remote ones are loaded from the provider's CDN and can be self-hosted with `npm run media:pull` (which also fills in exact Wikimedia credits). `npm run media:check` reports any remote file that no longer loads. Entries marked \"unverified\" could not be checked when this file was written.",
+  "images": [
+    {
+      "id": "studio-front",
+      "provider": "local",
+      "src": "/studio/front.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Ferrari 458 Spider in graphite with bronze forged wheels, front three-quarter view in a black studio",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "exterior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-rear",
+      "provider": "local",
+      "src": "/studio/rear.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Ferrari 458 Spider in graphite, rear three-quarter view on a polished black floor",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "exterior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-side",
+      "provider": "local",
+      "src": "/studio/side.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Ferrari 458 Spider in argento, side profile under a single overhead light",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "exterior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-high",
+      "provider": "local",
+      "src": "/studio/high.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Ferrari 458 Spider seen from above with the roof stowed, showing the tan leather cabin",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "interior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-wheel",
+      "provider": "local",
+      "src": "/studio/wheel.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Bronze forged wheel and front wing of the Ferrari 458 Spider, close up",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "detail"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-face",
+      "provider": "local",
+      "src": "/studio/face.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Ferrari 458 Spider in argento, seen almost head-on under a top light",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "exterior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-headlight",
+      "provider": "local",
+      "src": "/studio/headlight.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Headlight and bonnet of the Ferrari 458 Spider in graphite, close up",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "detail"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-cockpit",
+      "provider": "local",
+      "src": "/studio/cockpit.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Cabin of the Ferrari 458 Spider from above: tan leather seats and a carbon steering wheel",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "interior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-exhaust",
+      "provider": "local",
+      "src": "/studio/exhaust.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Triple exhaust and rear diffuser of the Ferrari 458 Spider",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "detail",
+        "engine"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-intake",
+      "provider": "local",
+      "src": "/studio/intake.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Rear haunch and side intake of the Ferrari 458 Spider in argento",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "detail"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "studio-rearlow",
+      "provider": "local",
+      "src": "/studio/rearlow.jpg",
+      "w": 2400,
+      "h": 1350,
+      "alt": "Ferrari 458 Spider in red, low rear three-quarter view with its reflection",
+      "credit": {
+        "author": "ONYX studio render",
+        "license": "Rendered from a third-party 3D model, see Credits",
+        "page": "/credits"
+      },
+      "tags": [
+        "studio",
+        "exterior"
+      ],
+      "vehicle": "ferrari-458-spider"
+    },
+    {
+      "id": "u-911-turbo-s-akabane",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1772332196542-23b1c4e5202c",
+      "alt": "White Porsche 911 Turbo S parked outdoors",
+      "credit": {
+        "author": "Andrew Akabane",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-white-porsche-911-turbo-s-parked-outdoors-D1tuZrRSyqU"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "porsche-911-turbo-s"
+    },
+    {
+      "id": "p-turbo-s-gauge-aerts",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/7237954/pexels-photo-7237954.jpeg",
+      "alt": "Turbo S speedometer on a sports car's instrument panel",
+      "credit": {
+        "author": "Jarne Aerts",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/a-turbo-s-speedometer-on-a-car-s-dashboard-7237954/"
+      },
+      "tags": [
+        "interior",
+        "detail"
+      ],
+      "vehicle": "porsche-911-turbo-s"
+    },
+    {
+      "id": "p-porsche-wheel-vineeth",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/39407165/pexels-photo-39407165.jpeg",
+      "alt": "Porsche wheel with an orange rim and yellow brake caliper",
+      "credit": {
+        "author": "Atelier by Vineeth",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/close-up-of-an-orange-porsche-wheel-in-garage-39407165/"
+      },
+      "tags": [
+        "detail"
+      ]
+    },
+    {
+      "id": "u-porsche-mountain-saremi",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1778432999466-1f0a0705d481",
+      "alt": "Dark grey Porsche on a winding mountain road",
+      "credit": {
+        "author": "nader saremi",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-dark-grey-porsche-drives-on-a-winding-mountain-road-xloGE5p3qws"
+      },
+      "tags": [
+        "roads",
+        "exterior"
+      ]
+    },
+    {
+      "id": "p-revuelto-yellow-hambiria",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/31565014/pexels-photo-31565014.jpeg",
+      "alt": "Front view of a yellow Lamborghini Revuelto in a showroom",
+      "credit": {
+        "author": "Mohit Hambiria",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/yellow-lamborghini-revuelto-supercar-in-showroom-31565014/"
+      },
+      "tags": [
+        "showroom",
+        "exterior"
+      ],
+      "vehicle": "lamborghini-revuelto"
+    },
+    {
+      "id": "p-revuelto-red-lokhande",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/16170477/pexels-photo-16170477.jpeg",
+      "alt": "Lamborghini Revuelto in Sant'Agata Bolognese, Italy",
+      "credit": {
+        "author": "Vaibhav Lokhande",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/modern-red-sports-car-16170477/"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "lamborghini-revuelto"
+    },
+    {
+      "id": "p-revuelto-yellow-indoor-hambiria",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/31565015/pexels-photo-31565015.jpeg",
+      "alt": "Yellow luxury supercar parked indoors",
+      "credit": {
+        "author": "Mohit Hambiria",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/vibrant-yellow-luxury-supercar-in-indoor-setting-31565015/"
+      },
+      "tags": [
+        "showroom"
+      ],
+      "vehicle": "lamborghini-revuelto"
+    },
+    {
+      "id": "p-lambo-badge-rzgar",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/37147603/pexels-photo-37147603.jpeg",
+      "alt": "Lamborghini emblem on a front bumper",
+      "credit": {
+        "author": "Redyar Rzgar",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/close-up-of-lamborghini-logo-on-car-bumper-37147603/"
+      },
+      "tags": [
+        "detail"
+      ]
+    },
+    {
+      "id": "p-seat-orange-rzgar",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/37147620/pexels-photo-37147620.jpeg",
+      "alt": "Sports car leather seat with orange accents",
+      "credit": {
+        "author": "Redyar Rzgar",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/luxury-sports-car-interior-leather-seat-37147620/"
+      },
+      "tags": [
+        "interior"
+      ]
+    },
+    {
+      "id": "p-engine-orange-martinez",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/30272185/pexels-photo-30272185.jpeg",
+      "alt": "Engine cover of an orange supercar in a showroom",
+      "credit": {
+        "author": "Quentin Martinez",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/close-up-of-orange-supercar-in-luxury-showroom-30272185/"
+      },
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "id": "p-296-red-brick",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/16345861/pexels-photo-16345861.jpeg",
+      "alt": "Red Ferrari 296 GTB parked outside a brick building",
+      "credit": {
+        "author": "Pexels contributor",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/ferrari-296-gtb-16345861/"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "ferrari-296-gtb"
+    },
+    {
+      "id": "p-296-blue",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/16386025/pexels-photo-16386025.jpeg",
+      "alt": "Blue Ferrari 296 GTB parked outside a dealership",
+      "credit": {
+        "author": "Pexels contributor",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/blue-ferrari-296-gtb-16386025/"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "ferrari-296-gtb"
+    },
+    {
+      "id": "p-296-red-show-shalimova",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/18415624/pexels-photo-18415624.jpeg",
+      "w": 6960,
+      "h": 4640,
+      "alt": "Red Ferrari 296 GTB at a city car show",
+      "credit": {
+        "author": "Liudmyla Shalimova",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/red-ferrari-296-gtb-sports-car-parked-on-a-street-18415624/"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "ferrari-296-gtb"
+    },
+    {
+      "id": "c-db12-1921",
+      "provider": "commons",
+      "src": "Aston_Martin_DB12_1X7A1921.jpg",
+      "alt": "Aston Martin DB12 coupé",
+      "credit": {
+        "author": "Wikimedia Commons contributor",
+        "license": "Creative Commons, see the file page",
+        "page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB12_1X7A1921.jpg"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "aston-martin-db12"
+    },
+    {
+      "id": "c-db12-1922",
+      "provider": "commons",
+      "src": "Aston_Martin_DB12_1X7A1922.jpg",
+      "alt": "Aston Martin DB12 coupé, second angle",
+      "credit": {
+        "author": "Wikimedia Commons contributor",
+        "license": "Creative Commons, see the file page",
+        "page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB12_1X7A1922.jpg"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "aston-martin-db12"
+    },
+    {
+      "id": "p-seat-red-stitch-spencer",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/4393331/pexels-photo-4393331.jpeg",
+      "alt": "Leather seat headrest with red stitching and an embroidered emblem",
+      "credit": {
+        "author": "Spencer",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/a-close-up-shot-of-a-car-seat-headrest-4393331/"
+      },
+      "tags": [
+        "interior"
+      ]
+    },
+    {
+      "id": "c-amg-c192",
+      "provider": "commons",
+      "src": "Mercedes-AMG_C192_1X7A0832.jpg",
+      "alt": "Mercedes-AMG GT Coupé of the C192 generation",
+      "credit": {
+        "author": "Wikimedia Commons contributor",
+        "license": "Creative Commons, see the file page",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_C192_1X7A0832.jpg"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "mercedes-amg-gt-63",
+      "unverified": true
+    },
+    {
+      "id": "p-amg-engine-bird",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/17590522/pexels-photo-17590522.jpeg",
+      "alt": "V8 engine bay of a Mercedes-AMG GT",
+      "credit": {
+        "author": "Mike Bird",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/engine-of-mercedes-amg-gt-17590522/"
+      },
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "id": "c-m5cs-fos22",
+      "provider": "commons",
+      "src": "BMW_M5_CS_F90_at_FOS22.jpg",
+      "alt": "BMW M5 CS at the 2022 Goodwood Festival of Speed",
+      "credit": {
+        "author": "Wikimedia Commons contributor",
+        "license": "Creative Commons, see the file page",
+        "page": "https://commons.wikimedia.org/wiki/File:BMW_M5_CS_F90_at_FOS22.jpg"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "bmw-m5-cs",
+      "unverified": true
+    },
+    {
+      "id": "p-m5-sill-hambiria",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/20218467/pexels-photo-20218467.jpeg",
+      "alt": "BMW M5 Competition illuminated door sill badge",
+      "credit": {
+        "author": "Mohit Hambiria",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/car-in-close-up-20218467/"
+      },
+      "tags": [
+        "detail"
+      ]
+    },
+    {
+      "id": "u-m4-showroom-katler",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1616591938203-9b5630a01006",
+      "alt": "Matte black BMW M4 in a bright dealership showroom",
+      "credit": {
+        "author": "Martin Katler",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/bmw-m4-in-car-dealership-showroom-Djarq-Jgs2c"
+      },
+      "tags": [
+        "showroom",
+        "exterior"
+      ],
+      "vehicle": "bmw-m4-competition"
+    },
+    {
+      "id": "u-m4-pair-thinh",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1741889838631-e8a1850854dc",
+      "alt": "Two BMW M4 coupés side by side",
+      "credit": {
+        "author": "Thinh Do",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/two-bmw-m4-sports-cars-side-by-side-aSMsI1V7BDU"
+      },
+      "tags": [
+        "exterior"
+      ],
+      "vehicle": "bmw-m4-competition"
+    },
+    {
+      "id": "u-bmw-garage-kodier",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1787178605268-36282fb87172",
+      "alt": "Matte black BMW in a minimalist, softly lit garage",
+      "credit": {
+        "author": "Ahmad Kodier",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/it/foto/bmw-nera-opaca-in-garage-minimalista-qs4COSSNwY4"
+      },
+      "tags": [
+        "showroom"
+      ]
+    },
+    {
+      "id": "p-458-showroom-early",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/16140277/pexels-photo-16140277.jpeg",
+      "alt": "Ferrari 458 Italia coupé in a showroom",
+      "credit": {
+        "author": "Kevin Early",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/ferrari-458-italia-16140277/"
+      },
+      "tags": [
+        "showroom"
+      ]
+    },
+    {
+      "id": "p-458-garage-kraken",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/17145776/pexels-photo-17145776.jpeg",
+      "alt": "Red Ferrari 458 Italia coupé parked in an urban garage",
+      "credit": {
+        "author": "Kraken Media",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/red-ferrari-458-italia-17145776/"
+      },
+      "tags": [
+        "showroom"
+      ]
+    },
+    {
+      "id": "p-458-forest-marges",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/20074836/pexels-photo-20074836.jpeg",
+      "alt": "Red Ferrari 458 Italia on a forest road at dusk",
+      "credit": {
+        "author": "Karll Marges",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/red-ferrari-458-italia-on-road-20074836/"
+      },
+      "tags": [
+        "roads"
+      ]
+    },
+    {
+      "id": "u-night-city-lichtblau",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1766353134008-bb3b8b99ddd2",
+      "alt": "Dark car speeding through a blurred city at night",
+      "credit": {
+        "author": "Paul Lichtblau",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-dark-car-speeds-through-a-blurry-city-at-night-pQ0_oAtnDqI"
+      },
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "u-red-headlights-roldan",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1762314908735-6c7fab306f86",
+      "alt": "Red sports car with its headlights on in darkness",
+      "credit": {
+        "author": "Moses Malik Roldan",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/red-sports-car-with-headlights-on-in-darkness-8RBH1GD0VkI"
+      },
+      "tags": [
+        "night",
+        "detail"
+      ]
+    },
+    {
+      "id": "u-black-yellow-lights-antony",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1728060838443-691dc6279245",
+      "alt": "Black sports car with yellow daytime running lights",
+      "credit": {
+        "author": "Mathew Antony",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/it/foto/unauto-sportiva-nera-con-luci-gialle-QZVGfAbepFc"
+      },
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "u-black-front-lights-antony",
+      "provider": "unsplash",
+      "src": "https://images.unsplash.com/photo-1728060838342-cb9744a27d1b",
+      "alt": "Front of a black car with its lights on",
+      "credit": {
+        "author": "Mathew Antony",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/it/foto/la-parte-anteriore-di-unauto-nera-con-le-luci-accese-5d_suG52k0w"
+      },
+      "tags": [
+        "night",
+        "detail"
+      ]
+    },
+    {
+      "id": "p-wheel-red-caliper-domigues",
+      "provider": "pexels",
+      "src": "https://images.pexels.com/photos/37742074/pexels-photo-37742074.jpeg",
+      "alt": "Sports car wheel with red brake calipers",
+      "credit": {
+        "author": "Alex Domigues",
+        "license": "Pexels License",
+        "page": "https://www.pexels.com/photo/close-up-of-luxury-car-wheel-in-leiria-37742074/"
+      },
+      "tags": [
+        "detail"
+      ]
+    }
+  ]
+}

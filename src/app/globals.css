@@ -1,0 +1,343 @@
+@import "tailwindcss";
+/* Scan all of src explicitly: the preview build runs Vite from src/preview,
+   where Tailwind's automatic detection would only see the preview shell. */
+@source "../";
+
+/*
+  ONYX design tokens
+  Layout concept: a black stage for imagery and film, a graphite editorial page for reading,
+  hairline spec-sheet rules for data. Left-aligned, asymmetric, generous negative space.
+*/
+@theme {
+  --color-void: #000000; /* stage: film, hero, studio */
+  --color-graphite: #0c0e11; /* editorial page */
+  --color-carbon: #14171b; /* raised panels */
+  --color-gunmetal: #262a30; /* hairlines */
+  --color-steel: #7c838d; /* tertiary text */
+  --color-silver: #b5bac1; /* secondary text */
+  --color-platinum: #eef0f2; /* primary text */
+  --color-bronze: #c39a63; /* the one accent: state, focus, key actions */
+  --color-bronze-hi: #e2c18c;
+  --color-alert: #e0614f;
+  --color-ok: #7fb38a;
+
+  --font-sans: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+
+  --ease-cine: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-sweep: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --breakpoint-xs: 26rem;
+}
+
+/* Width axis as meaning: expanded = brand voice, condensed = measurement */
+@utility wd-expanded {
+  font-stretch: 125%;
+}
+@utility wd-wide {
+  font-stretch: 112%;
+}
+@utility wd-normal {
+  font-stretch: 100%;
+}
+@utility wd-narrow {
+  font-stretch: 87.5%;
+}
+@utility wd-condensed {
+  font-stretch: 72%;
+}
+@utility tabular {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+@utility shell {
+  width: 100%;
+  max-width: 1680px;
+  margin-inline: auto;
+  padding-left: max(1.25rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1.25rem, env(safe-area-inset-right, 0px));
+  @media (width >= 48rem) {
+    padding-left: max(2.5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(2.5rem, env(safe-area-inset-right, 0px));
+  }
+  @media (width >= 80rem) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@utility text-metal {
+  background-image: linear-gradient(176deg, #ffffff 0%, #d9dde2 38%, #8e949c 62%, #e9ecef 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --header-h: 4.5rem;
+  }
+  html {
+    background: var(--color-void);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-graphite);
+    color: var(--color-platinum);
+    font-family: var(--font-sans);
+    font-stretch: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    line-height: 1.02;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-bronze);
+    color: #000;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-bronze);
+    outline-offset: 3px;
+  }
+  img,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+  button {
+    cursor: pointer;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+  [hidden] {
+    display: none !important;
+  }
+
+  /* Lenis */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: 0.75rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    background: var(--color-platinum);
+    color: #000;
+    font-weight: 600;
+    transform: translateY(-150%);
+    transition: transform 0.2s var(--ease-cine);
+  }
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  /* Buttons: sharp-edged like a machined part, with a specular sweep on hover */
+  .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 3.25rem;
+    padding: 0 1.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-stretch: 112%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    overflow: hidden;
+    isolation: isolate;
+    transition:
+      background-color 0.35s var(--ease-cine),
+      color 0.35s var(--ease-cine),
+      border-color 0.35s var(--ease-cine);
+    white-space: nowrap;
+  }
+  .btn::after {
+    content: "";
+    position: absolute;
+    inset: -20% auto -20% -60%;
+    width: 45%;
+    transform: skewX(-20deg) translateX(-120%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    z-index: -1;
+    pointer-events: none;
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .btn:hover::after {
+      transform: skewX(-20deg) translateX(420%);
+      transition: transform 0.9s var(--ease-sweep);
+    }
+  }
+  .btn-primary {
+    background: var(--color-platinum);
+    color: #050506;
+  }
+  .btn-primary:hover {
+    background: #ffffff;
+  }
+  .btn-ghost {
+    border: 1px solid rgb(238 240 242 / 0.38);
+    color: var(--color-platinum);
+    background: rgb(0 0 0 / 0.12);
+    backdrop-filter: blur(6px);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-platinum);
+  }
+  .btn-bronze {
+    border: 1px solid var(--color-bronze);
+    color: var(--color-bronze-hi);
+  }
+  .btn-bronze:hover {
+    background: var(--color-bronze);
+    color: #0b0b0c;
+  }
+  .btn-sm {
+    min-height: 2.5rem;
+    padding: 0 1.1rem;
+    font-size: 0.6875rem;
+  }
+  .btn[disabled],
+  .btn[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .link-line {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.45s var(--ease-cine);
+    padding-bottom: 2px;
+  }
+  .link-line:hover,
+  .link-line:focus-visible {
+    background-size: 100% 1px;
+  }
+
+  /* Small label used for real categories (vehicle status, spec group), never decoration */
+  .label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    font-stretch: 112%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-steel);
+  }
+
+  /* Spec-sheet rows */
+  .spec-rows > * + * {
+    border-top: 1px solid var(--color-gunmetal);
+  }
+
+  /* Film grain over the stage sections */
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.07;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  /* Inputs */
+  .field-input {
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0.85rem 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-gunmetal);
+    color: var(--color-platinum);
+    border-radius: 0;
+    transition: border-color 0.3s var(--ease-cine);
+    appearance: none;
+  }
+  .field-input::placeholder {
+    color: rgb(124 131 141 / 0.7);
+  }
+  .field-input:hover {
+    border-bottom-color: var(--color-steel);
+  }
+  .field-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-bronze);
+  }
+  .field-input[aria-invalid="true"] {
+    border-bottom-color: var(--color-alert);
+  }
+  select.field-input {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23b5bac1' stroke-width='1.4'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.25rem center;
+    padding-right: 1.75rem;
+  }
+  select.field-input option {
+    background: var(--color-carbon);
+    color: var(--color-platinum);
+  }
+  input[type="date"].field-input::-webkit-calendar-picker-indicator {
+    filter: invert(0.85);
+    cursor: pointer;
+  }
+}
+
+/* Long-exposure plate (FallbackPlate): trails drift slowly, like traffic seen through a long lens */
+@keyframes plate-drift {
+  0%,
+  100% {
+    translate: -4% 0;
+  }
+  50% {
+    translate: 4% 0;
+  }
+}
+.plate-trail {
+  animation: plate-drift 14s var(--ease-sweep) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate-trail {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

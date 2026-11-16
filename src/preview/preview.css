@@ -1,0 +1,30 @@
+/*
+  Preview build only. The host page adds a small unlayered reset (system font,
+  14px, light colour scheme); these unlayered rules restore the site's own.
+*/
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-latin-standard-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-archivo: "Archivo";
+  color-scheme: dark;
+}
+
+html {
+  background: #000000;
+}
+
+body {
+  margin: 0;
+  background: #0c0e11;
+  color: #eef0f2;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
